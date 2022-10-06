@@ -1,0 +1,18 @@
+const http = require('http');
+const app = require('../app');
+
+//en esta funcion podemos validar un puerto
+const normalizePort = (value)=> {
+    const port = parseInt(value,10);
+    if(isNaN(port)) return value;
+    if(port > 0) return port;
+}
+
+// Se almacena el puerto por defecto del servidor o si no se asigna el puerto 3030
+const port = normalizePort(process.env.PORT || 3030);
+
+//iniciamos el servidor
+http.createServer(app);
+
+//que escuche en el puerto de la variable port
+app.listen(port);

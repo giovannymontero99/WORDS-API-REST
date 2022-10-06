@@ -1,0 +1,29 @@
+{
+  "name": "primer_proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon node src/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giovannymontero99/GIT-TEST.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giovannymontero99/GIT-TEST/issues"
+  },
+  "homepage": "https://github.com/giovannymontero99/GIT-TEST#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
