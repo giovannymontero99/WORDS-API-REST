@@ -7,7 +7,7 @@ const connection = require('./data-access-layer/config');
 //**middlewares**//
 app.use(logger('dev'));
 
-console.log("hola mundo");
+
 
 app.get('/',(req,res) => {
     connection.query('SELECT * FROM paciente',(err,data) => {
